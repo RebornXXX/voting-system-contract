@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_votingSystem",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VoterCandidate.sol": "Candidate"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VoterCandidate.sol": {
+			"keccak256": "0x3295a60dd24ce62017e742168f9bb583c5f5540359c5079dbf571f5b925b8b79",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f9b7f72bc22c1ab0abc15f2c1f9c4545968097518bd573b2daaef2be94aef8b7",
+				"dweb:/ipfs/QmbvnUjcisTjQfLSCypNwumZcJuch1cMC3v15jq3HbVUUf"
+			]
+		},
+		"VotingSystem.sol": {
+			"keccak256": "0x7aca1d78b00105495079c1958cb46be627dbde9679222241d07a43cf61532e87",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://24994452344bee665cdcc687d0a8df86740c7f7fd524db5c288d4953aafc9b6e",
+				"dweb:/ipfs/QmYCWicYv2rFedGLU8ZVf2zhZEKQdBBp84P75yw6g9Lqsb"
+			]
+		}
+	},
+	"version": 1
+}
