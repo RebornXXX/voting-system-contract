@@ -43,6 +43,7 @@ contract VotingSystem {
     struct Candidate {
         string name;
         string id;
+        string proposal;
         uint256 votesReceived;
     }
 
@@ -127,12 +128,13 @@ contract VotingSystem {
         return string(idBytes);
     }
 
-    function registerCandidate(address _candidate, string memory _name) internal {
+    function registerCandidate(address _candidate, string memory _name, string memory _proposal) internal {
         registeredCandidates[_candidate] = true;
 
         candidatesDetails[_candidate] = Candidate({
             name: _name,
             id: createId(_name),
+            proposal: _proposal,
             votesReceived: 0
         });
         candidateAddresses.push(_candidate);
@@ -140,9 +142,9 @@ contract VotingSystem {
 
 
 
-    function registerAsCandidate(string memory _name) public {
+    function registerAsCandidate(string memory _name, string memory _proposal) public {
         require(!registeredCandidates[msg.sender], "Candidate is alredy registrerd.");
-        registerCandidate(msg.sender, _name);
+        registerCandidate(msg.sender, _name, _proposal);
     }
 
     function getRegisteredCandidatesCount() public view returns (uint256) {

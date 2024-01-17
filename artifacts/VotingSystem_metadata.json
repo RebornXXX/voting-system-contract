@@ -91,6 +91,11 @@
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_proposal",
+						"type": "string"
 					}
 				],
 				"name": "registerAsCandidate",
@@ -172,11 +177,11 @@
 	},
 	"sources": {
 		"VotingSystem.sol": {
-			"keccak256": "0x9d120569071cfeff06c271b8eb746f8d8f0bb2bb2f5b3c3b1b4c14a3d210e07e",
+			"keccak256": "0xef6b8fd37980f9b9234bcf96ac370ff9ac4d1145a93fad241011021e0fc15c88",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0c37706d6e6cd002a0f1014f830fa512a832cf2b84b5f980e167a5b016fa05c1",
-				"dweb:/ipfs/QmUXUrvtkasTyN1Rm4BGAMmbMDVydWJH2zYqR7gSMZgxaw"
+				"bzz-raw://e50c180dd72bdbc0e7882a3f87e38a31d9721f630ca44dd42fc96e1654217003",
+				"dweb:/ipfs/QmNopsjzDi1oCma1hF235K3DgeKJ3cuRcJx7z8E3JWrADD"
 			]
 		}
 	},
