@@ -11,45 +11,26 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "AllCandidates",
+				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string[]",
 						"name": "",
-						"type": "address"
+						"type": "string[]"
 					}
 				],
-				"name": "candidatesDetails",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Winner",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "name",
+						"name": "",
 						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "electionEnded",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "electionStarted",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -63,20 +44,29 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getRegisteredCandidates",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"name": "getCandidateById",
 				"outputs": [
 					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							}
-						],
-						"internalType": "struct VotingSystem.Candidate[]",
+						"internalType": "address",
 						"name": "",
-						"type": "tuple[]"
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Votes_Received",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -98,25 +88,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_candidate",
-						"type": "address"
-					}
-				],
-				"name": "isCandidateRegistered",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
@@ -129,7 +100,45 @@
 			},
 			{
 				"inputs": [],
+				"name": "registerAsVoter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "startElection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewVoterDetails",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "Registered",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "Voted",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idOrAddress",
+						"type": "string"
+					}
+				],
+				"name": "voteById",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -163,11 +172,11 @@
 	},
 	"sources": {
 		"VotingSystem.sol": {
-			"keccak256": "0x34a69351233000349a4087bf1cf72177961291eb22029f3184ea2b99eec93cfd",
+			"keccak256": "0x9d120569071cfeff06c271b8eb746f8d8f0bb2bb2f5b3c3b1b4c14a3d210e07e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b50c5f8b62ef19b9b7403a7db8265e618d1d0f94cc1562aa50e4443db5940681",
-				"dweb:/ipfs/QmfBE94gAYQzFPWTwXzEAr7N5RUUoji1xBMjA4gf32PDLb"
+				"bzz-raw://0c37706d6e6cd002a0f1014f830fa512a832cf2b84b5f980e167a5b016fa05c1",
+				"dweb:/ipfs/QmUXUrvtkasTyN1Rm4BGAMmbMDVydWJH2zYqR7gSMZgxaw"
 			]
 		}
 	},
